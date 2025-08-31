@@ -53,6 +53,8 @@ uint32_t UserLimits::getAllowedMinutes() const
 void UserLimits::setExtraAlloweddMinutes(int64_t dayNumber, uint32_t minutes)
 {
     allowedExtraMinutesPerDayNumber[dayNumber] = minutes;
+
+    Log::Info("UserLimits extra time for user {0}, day {1}: extra time {2} minutes", userId, dayNumber, minutes);
 }
 
 uint32_t UserLimits::getAlowedExtraTime()
