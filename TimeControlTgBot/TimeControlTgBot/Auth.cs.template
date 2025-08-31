@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TimeControlTgBot
+{
+    internal class Auth
+    {
+        public static readonly string TG_API_TOKEN = "__UPDATE_ME__";
+
+        public static readonly List<long> ADMIN_IDS = new List<long> { 111, 222 };
+
+    }
+}
